@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Doutor Virtual</title>
+    </head>
+    <body>
+        <h1>O que você está sentido?</h1>
+        <h3>Coloque apenas um dos sintomas!</h3>
+        <input type="text" id="sintomas">
+        <button onclick="obterDiagnostico()">Obter Possível Diagnóstico</button>
+        <p id="resposta"></p>
+
+        <script>
+            const database = [
+                {
+                    doenca: 'Gripe',
+                    sintomas: ['febre', 'tosse', 'dor de garganta', 'dores no corpo', 'fadiga']
+                },
+                {
+                    doenca: 'Resfriado',
+                    sintomas: ['nariz entupido', 'espirros', 'coriza', 'dor de garganta', 'tosse leve']
+                },
+                {
+                    doenca: 'Dengue',
+                    sintomas: ['febre alta', 'dores no corpo', 'dor de cabeça', 'erupções cutâneas', 'dor nos olhos']
+                },
+                {
+                    doenca: 'Diarreia',
+                    sintomas: ['diarreia frequente', 'dor abdominal', 'náuseas', 'vômitos', 'desidratação']
+                },
+                {
+                    doenca: 'Infecções Transmitidas pela Água',
+                    sintomas: ['diarreia', 'náuseas', 'vômitos', 'dor abdominal', 'febre']
+                }
+            ];
+
+            function obterDiagnostico() {
+                const sintomasInseridos = document.getElementById('sintomas').value.toLowerCase().split(', ');
+                const resposta = document.getElementById('resposta');
+
+                let possiveisDoencas = [];
+
+                for (const entry of database) {
+                    if (sintomasInseridos.every(sintoma => entry.sintomas.includes(sintoma))) {
+                        possiveisDoencas.push(entry.doenca);
+                    }
+                }
+
+                if (possiveisDoencas.length > 0) {
+                    if (possiveisDoencas.length === 1) {
+                        resposta.textContent = `Você pode estar com ${possiveisDoencas[0]}. Consulte um médico para uma avaliação mais precisa.`;
+                    } else {
+                        resposta.textContent = `Você pode estar com ${possiveisDoencas.join(' ou ')}. Consulte um médico para determinar a doença com mais precisão.`;
+                    }
+                } else {
+                    resposta.textContent = 'Não foi possível identificar uma doença com base nos sintomas fornecidos. Consulte um médico para avaliação.';
+                }
+            }
+        </script>
+    </body>
+</html>
