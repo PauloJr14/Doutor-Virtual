@@ -1,0 +1,37 @@
+body {
+    background-color: floralwhite;
+    color: rgb(20,20,20);
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+input {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+button {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+#espaco1 {
+    font-size: 50px;
+}
+
+#espaco2 {
+    font-size: 40px;
+}
