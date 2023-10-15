@@ -1,80 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Paulo José">
-    <meta name="keywords" content="Doutor, Virtual, Diagnóstico, Confiável, IPA, 2023, Sintomas, Doenças,">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Paulo José">
+        <meta name="keywords" content="IPA,2023,EAPC,Escola,Aplicação,Professor,Chaves,Futuro,Saúde,Mãos,IA,Nível,2,II">
 
-    <link rel="stylesheet" href="style.css">
-    <title>Doutor Virtual</title>
-</head>
-<body>
-    <header>
-        <h1>Seja Bem-Vindo ao Doutor Virtual!</h1>
-        <p id="espaco1"></p>
-        <h2>Como funciona?</h2>
-        <p>Se você não estiver se sentindo bem, informe o que você está sentindo (se for mais de um, coloque só um) e será informado possíveis causas e possíveis soluções.</p>
-        <p id="espaco2"></p>
-    </header>
-    <main>
-        <form id="sintoma-form">
-            <h2>O que você está sentindo?</h2>
-            <input type="text" id="sintoma" name="sintoma" required>
-            <button type="submit">Diagnosticar</button>
-        </form>
-        
-        <div id="resultado" style="display: none;">
-            <p id="espaco2"></p>
-            <h2>Possíveis causas (doenças):</h2>
-            <p id="doencas"></p>
-            <p id="espaco2"></p>
-            <h2>O que fazer para melhorar:</h2>
-            <p id="tratamento"></p>
-        </div>
-    </main>
-    
-    <script>
-        document.getElementById("sintoma-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-            
-            const sintoma = document.getElementById("sintoma").value;
-            let doencas = [];
-            let tratamento = "";
-            
-            switch (sintoma.toLowerCase()) {
-                case "dor de cabeça":
-                    doencas = ["Enxaqueca", "Tensão", "Sinusite"];
-                    tratamento = "Descanse em um lugar escuro e silencioso, beba água e tome um analgésico se necessário.";
-                    break;
-                case "febre":
-                    doencas = ["Gripe", "Infecção Urinária", "Dengue"];
-                    tratamento = "Descanse, beba líquidos, tome medicamentos para reduzir a febre e consulte um médico se os sintomas persistirem.";
-                    break;
-                case "dor de garganta":
-                    doencas = ["Amigdalite", "Laringite", "Gripe"];
-                    tratamento = "Gargareje com água morna e sal, descanse, beba líquidos quentes e consulte um médico se a dor persistir.";
-                    break;
-                case "tosse":
-                    doencas = ["Resfriado", "Bronquite", "Asma"];
-                    tratamento = "Beba líquidos, descanse e evite irritantes. Consulte um médico se a tosse persistir.";
-                    break;
-                case "náuseas":
-                    doencas = ["Enjoo de viagem", "Intoxicação alimentar", "Gravidez"];
-                    tratamento = "Descanse, evite alimentos pesados e consulte um médico se as náuseas persistirem.";
-                    break;
-                default:
-                    doencas = ["Não foi possível determinar a doença com base no sintoma inserido."];
-                    tratamento = "Consulte um médico para um diagnóstico adequado.";
-                    break;
-            }
-            
-            const doencasTexto = doencas.join(", ");
-            document.getElementById("doencas").textContent = doencasTexto;
-            document.getElementById("tratamento").textContent = tratamento;
-            document.getElementById("resultado").style.display = "block";
-        });
-    </script>
-</body>
+        <link rel="stylesheet" href="style.css">
+        <title>Doutor Virtual</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="barrainicial">
+                    <h1>Doutor Virtual</h1>
+                    <ul>
+                        <li><a id="estouaqui" href=""><b>Home</b></a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Diagnosticar</a></li>
+                        <li><a href="#">Agendar</a></li>
+                        <li><a href="#">Quem somos?</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </body>
+
 </html>

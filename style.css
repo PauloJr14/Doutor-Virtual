@@ -1,37 +1,44 @@
 body {
-    background-color: floralwhite;
-    color: rgb(20,20,20);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-family: cursive;
-    font-size: 50px;
+#barrainicial {
+    width: 85%;
+    margin: 0px auto;
+    padding: 20px;
 }
 
-h2 {
-    font-family: cursive;
-    font-size: 30px;
+header {
+    display: flexbox;
+    background-color: #FF6961;
+    color: #ffffff;
+    padding: 10px 0;
 }
 
-p {
-    font-size: 20px;
-    font-family: cursive;
-}
-
-input {
-    font-family: cursive;
-    font-size: 15px;
-}
-
-button {
-    font-family: cursive;
-    font-size: 15px;
-}
-
-#espaco1 {
-    font-size: 50px;
-}
-
-#espaco2 {
+nav h1 {
+    margin: 30px auto 20px;
     font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#estouaqui {
+    color: #484D50;
 }
