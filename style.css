@@ -4,6 +4,11 @@ body {
     padding: 0;
 }
 
+
+a {
+    color: rgb(240, 70, 70);
+}
+
 #barrainicial {
     width: 85%;
     margin: 0px auto;
@@ -42,4 +47,149 @@ nav ul li a {
 
 #estouaqui {
     color: #484D50;
+}
+
+@media screen and (max-width:400px){
+    #logogrupo {
+        height: 200px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 15px;
+    }
+    
+    #texto {
+        margin-left: 30px;
+        margin-right: 50px;
+        line-height: 2;
+    }
+
+    #foto {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:600px){
+    #logogrupo {
+        height: 300px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 15px;
+    }
+    
+    #texto {
+        margin-left: 30px;
+        margin-right: 100px;
+        line-height: 2;
+    }
+
+    #foto {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:720px){
+    #logogrupo {
+        height: 300px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 15px;
+    }
+    
+    #texto {
+        margin-left: 30px;
+        margin-right: 200px;
+        line-height: 2;
+    }
+
+    #foto {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:850px){
+    #logogrupo {
+        height: 400px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+    #texto {
+        margin-left: 30px;
+        margin-right: 200px;
+        line-height: 2;
+    }
+
+    #foto {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:920px){
+    #logogrupo {
+        height: 400px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+    #texto {
+        margin-left: 30px;
+        margin-right: 400px;
+        line-height: 2;
+    }
+
+    #foto {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:920px) and (max-width:1100px){
+    #container {
+        display: flex;
+    }
+    
+    #logogrupo {
+        height: 400px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+    #texto {
+        margin-right: 50px;
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width:1100px){
+    #container {
+        display: flex;
+    }
+    
+    #logogrupo {
+        height: 400px;
+    }
+    
+    .caixainicial {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+    #texto {
+        margin-right: 200px;
+        line-height: 2;
+    }
 }
