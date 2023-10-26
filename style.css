@@ -57,20 +57,12 @@ nav ul li a {
     .caixainicial {
         margin: 20px;
         font-size: 15px;
-    }
-    
-    #texto {
-        margin-left: 30px;
-        margin-right: 50px;
-        line-height: 2;
-    }
-
-    #foto {
         text-align: center;
+        line-height: 2;
     }
 }
 
-@media screen and (min-width:400px) and (max-width:600px){
+@media screen and (min-width:400px) and (max-width:720px){
     #logogrupo {
         height: 300px;
     }
@@ -78,41 +70,17 @@ nav ul li a {
     .caixainicial {
         margin: 20px;
         font-size: 15px;
+        text-align: center;
+        line-height: 2;
     }
-    
+
     #texto {
-        margin-left: 30px;
+        margin-left: 100px;
         margin-right: 100px;
-        line-height: 2;
-    }
-
-    #foto {
-        text-align: center;
     }
 }
 
-@media screen and (min-width:600px) and (max-width:720px){
-    #logogrupo {
-        height: 300px;
-    }
-    
-    .caixainicial {
-        margin: 20px;
-        font-size: 15px;
-    }
-    
-    #texto {
-        margin-left: 30px;
-        margin-right: 200px;
-        line-height: 2;
-    }
-
-    #foto {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width:720px) and (max-width:850px){
+@media screen and (min-width:720px) and (max-width:920px){
     #logogrupo {
         height: 400px;
     }
@@ -120,37 +88,13 @@ nav ul li a {
     .caixainicial {
         margin: 20px;
         font-size: 20px;
-    }
-    
-    #texto {
-        margin-left: 30px;
-        margin-right: 200px;
+        text-align: center;
         line-height: 2;
     }
 
-    #foto {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width:850px) and (max-width:920px){
-    #logogrupo {
-        height: 400px;
-    }
-    
-    .caixainicial {
-        margin: 20px;
-        font-size: 20px;
-    }
-    
     #texto {
-        margin-left: 30px;
-        margin-right: 400px;
-        line-height: 2;
-    }
-
-    #foto {
-        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
